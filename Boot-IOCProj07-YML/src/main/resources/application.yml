@@ -1,0 +1,8 @@
+#application.yml
+
+org:
+  nt:
+   eno: 11
+   ename: Dharani
+   eaddrs: HYD
+   esalary: 1800000	

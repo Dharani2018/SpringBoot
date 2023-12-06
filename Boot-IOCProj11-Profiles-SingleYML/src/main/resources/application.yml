@@ -1,0 +1,53 @@
+spring:
+  profiles:
+    active: dev
+    
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql:///dpSpring
+    type: com.mchange.v2.c3p0.ComboPooledDataSource
+    password: Dharani@96  
+    
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql:///dpSpring
+    type: org.apache.commons.dbcp2.BasicDataSource
+    password: Dharani@96
+    
+---
+spring:
+  config:
+    activate:
+      on-profile: uat
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    username: tiger
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    type: oracle.ucp.jdbc.PoolDataSourceImpl
+    password: root
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+      
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    username: tiger
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    password: root
+    
+

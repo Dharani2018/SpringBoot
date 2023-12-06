@@ -1,0 +1,31 @@
+#application.yml
+
+org:
+  nt:
+    ename: Dharani
+    eno: 1184
+    nickNames: [Nani, Dhara]
+
+    friends: [Virija, Vidya, Shirisha]
+
+    #for Set collection
+    #phoneNumbers: [1234567899,1236547891, 1234567899]
+    phone-numbers: 
+         456456456
+         752145952
+    phoneNumbers: [1234567899,1236547891, 1234567899]
+       
+    idDetails: 
+      aadhar: 12344ASD15
+      passport: 78541WE6
+      pan: ENWPP4512J
+      
+    company:
+       cname: Naresh IT
+       addrs: HYD
+       director: Naresh
+       size: 100000
+       
+spring:
+  config:
+     import: myFile.yml
